@@ -605,7 +605,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/FundLook/ThridParty/YRMarketFramework",
 				);
-				GCC_PREFIX_HEADER = "$(SRCROOT)/FundLook/PrefixHeader.pch\n";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FundLook/PrefixHeader.pch";
 				INFOPLIST_FILE = FundLook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -638,7 +638,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/FundLook/ThridParty/YRMarketFramework",
 				);
-				GCC_PREFIX_HEADER = "$(SRCROOT)/FundLook/PrefixHeader.pch\n";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FundLook/PrefixHeader.pch";
 				INFOPLIST_FILE = FundLook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
