@@ -19,7 +19,6 @@
 @interface FMDBManager()
 
 @property (strong, nonatomic) FMDatabaseQueue *queueDb;
-@property (strong, nonatomic) FMDatabase *db;
 
 @end
 
@@ -41,7 +40,6 @@
     NSLog(@"!!!dbPath = %@",dbPath);
     
     self.queueDb = [FMDatabaseQueue databaseQueueWithPath:dbPath];
-    self.db = [FMDatabase databaseWithPath:dbPath];
     
     [self.queueDb inDatabase:^(FMDatabase * _Nonnull db) {
         NSLog(@"db");
@@ -66,7 +64,6 @@
         
         [db close];
     }];
-    [self.db close];
     [self.queueDb close];
 }
 
@@ -97,14 +94,14 @@
             id obj = [fundModel valueForKey:key];
             if(![obj isKindOfClass:[NSNull class]] && obj){
                 if(sql.length == 0){
-                    [sql appendFormat:@"%@=%@", key, [fundModel valueForKey:key]];
+                    [sql appendFormat:@"%@ = '%@'", key, [fundModel valueForKey:key]];
                 }else{
-                    [sql appendFormat:@",%@=%@", key, [fundModel valueForKey:key]];
+                    [sql appendFormat:@",%@ = '%@'", key, [fundModel valueForKey:key]];
                 }
             }
         }
         
-        NSString *updateSql = [NSString stringWithFormat:@"UPDATE %@ SEL %@ WHERE fundCode = %@", FUND_TABLE_NAME, sql, fundModel.fundCode];
+        NSString *updateSql = [NSString stringWithFormat:@"UPDATE %@ SET %@ WHERE fundCode = '%@'", FUND_TABLE_NAME, sql, fundModel.fundCode];
         [db executeUpdate:updateSql];
         
         [db close];
