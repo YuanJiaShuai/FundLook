@@ -42,7 +42,6 @@
     self.queueDb = [FMDatabaseQueue databaseQueueWithPath:dbPath];
     
     [self.queueDb inDatabase:^(FMDatabase * _Nonnull db) {
-        NSLog(@"db");
         NSString *existsSql = [NSString stringWithFormat:@"select count(name) as countNum from sqlite_master where type = 'table' and name = '%@'", FUND_TABLE_NAME];
         FMResultSet *rs = [db executeQuery:existsSql];
         if ([rs next]) {

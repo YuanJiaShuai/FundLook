@@ -19,23 +19,23 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B1F00249-CAA3-4B26-A60B-C7A3641CC528"
+            uuid = "F889A814-9FD1-41CC-9E3C-E5045AC2D9CB"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FundLook/Controller/ViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
-            landmarkName = "-tableView:shouldShowCellExpansionForTableColumn:row:"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
+            landmarkName = "-deleteOptionFundEvent:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AE4B05ED-1A9A-4E60-A004-D17F41924D12"
+            uuid = "522B1A47-8696-48E0-9FF1-49F29915F159"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -44,7 +44,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "207"
             endingLineNumber = "207"
-            landmarkName = "-tableView:setObjectValue:forTableColumn:row:"
+            landmarkName = "-rightMouseUp:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

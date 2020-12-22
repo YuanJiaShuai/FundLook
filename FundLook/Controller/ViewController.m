@@ -89,12 +89,12 @@
         NSInteger TotalCount = [responseObject[@"TotalCount"] integerValue];
         if(TotalCount != 0){
             NSArray *diff = responseObject[@"Datas"];
-            for(NSDictionary *diffDic in diff){
-                FundModel *model = [[FundModel alloc]init];
-                model.fundCode = diffDic[@"FCODE"];
-                
-                [[FMDBManager sharedManager] updateFundModel:model];
-            }
+//            for(NSDictionary *diffDic in diff){
+//                FundModel *model = [[FundModel alloc]init];
+//                model.fundCode = diffDic[@"FCODE"];
+//
+//                [[FMDBManager sharedManager] updateFundModel:model];
+//            }
             self.fundArray = [[NSMutableArray alloc]initWithArray:diff];
             [self.tableView reloadData];
             
@@ -136,6 +136,10 @@
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView{
     return self.fundArray.count;
+}
+
+- (BOOL)tableView:(NSTableView *)tableView shouldSelectRow:(NSInteger)row{
+    return YES;
 }
 
 - (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row{
@@ -195,23 +199,16 @@
     
 }
 
-- (BOOL)tableView:(NSTableView *)tableView shouldShowCellExpansionForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row{
-    return YES;
-}
-
-- (BOOL)tableView:(NSTableView *)tableView shouldEditTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row{
-    return YES;
-}
-
-- (void)tableView:(NSTableView *)tableView setObjectValue:(nullable id)object forTableColumn:(nullable NSTableColumn *)tableColumn row:(NSInteger)row{
-    
-}
-
 - (IBAction)updateFundClickEvent:(NSButton *)sender {
     [self loadFundDataRequest];
 }
 
+- (void)rightMouseUp:(NSEvent *)event{
+    
+}
+
 - (IBAction)deleteOptionFundEvent:(NSMenuItem *)sender {
+    
     NSDictionary *fundModel = self.fundArray[[sender.menu.identifier integerValue]];
     
     FundModel *model = [[FundModel alloc]init];
@@ -228,6 +225,8 @@
     [self presentViewControllerAsModalWindow:vc];
     NSLog(@"");
 }
+
+
 
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];

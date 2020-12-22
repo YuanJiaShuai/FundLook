@@ -11,7 +11,17 @@
 
 - (void)awakeFromNib{
     [super awakeFromNib];
-    self.backgroundColor = [NSColor redColor];
+}
+
+- (NSMenu *)menuForEvent:(NSEvent *)event{
+    if(event.type == NSEventTypeRightMouseDown){
+        NSPoint menuPoint = [self convertPoint:[event locationInWindow] fromView:nil];
+        NSInteger row = [self rowAtPoint:menuPoint];
+        self.menu.identifier = [NSString stringWithFormat:@"%ld", row];
+        return self.menu;
+    }else{
+        return nil;
+    }
 }
 
 - (void)drawRect:(NSRect)dirtyRect {
