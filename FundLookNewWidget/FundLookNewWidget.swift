@@ -10,15 +10,18 @@ import SwiftUI
 import Intents
 
 struct Provider: IntentTimelineProvider {
+    //占位试图
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(date: Date(), configuration: ConfigurationIntent())
     }
 
+    //编辑屏幕在左上角选择添加Widget、第一次展示时会调用该方法
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
         let entry = SimpleEntry(date: Date(), configuration: configuration)
         completion(entry)
     }
 
+    //进行数据的预处理，转化成Entry
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
 
