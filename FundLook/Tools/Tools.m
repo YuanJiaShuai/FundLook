@@ -7,35 +7,31 @@
 
 #import "Tools.h"
 
-#define TXCOLORBLACK [NSColor colorWithRed:51.0/255 green:51.0/255 blue:51.0/255 alpha:1]
-#define TXCOLORRED [NSColor colorWithRed:244.0/255 green:67.0/255 blue:54.0/255 alpha:1]
-#define TXCOLORGREEN [NSColor colorWithRed:32.0/255 green:171.0/255 blue:63.0/255 alpha:1]
-
 @implementation Tools
 TXSingletonM(Tools)
 
 + (NSColor *)colorOfValue:(NSString *)value{
     value = [Tools stringOfObjc:value];
     if([value isEqualToString:@"--"]){
-        return TXCOLORBLACK;
+        return [NSColor colorWithRed:51.0/255 green:51.0/255 blue:51.0/255 alpha:1];
     }else{
         if([value doubleValue] > 0){
-            return TXCOLORRED;
+            return [NSColor colorWithRed:244.0/255 green:67.0/255 blue:54.0/255 alpha:1];
         }else if([value doubleValue] < 0){
-            return TXCOLORGREEN;
+            return [NSColor colorWithRed:32.0/255 green:171.0/255 blue:63.0/255 alpha:1];
         }else{
-            return TXCOLORBLACK;
+            return [NSColor colorWithRed:51.0/255 green:51.0/255 blue:51.0/255 alpha:1];
         }
     }
 }
 
 + (NSColor*)colorOfSubValue:(double)subValue superValue:(double)superValue{
     if(subValue > superValue){
-        return TXCOLORRED;
+        return [NSColor colorWithRed:244.0/255 green:67.0/255 blue:54.0/255 alpha:1];
     }else if(subValue < superValue){
-        return TXCOLORGREEN;
+        return [NSColor colorWithRed:32.0/255 green:171.0/255 blue:63.0/255 alpha:1];
     }else{
-        return TXCOLORBLACK;
+        return [NSColor colorWithRed:51.0/255 green:51.0/255 blue:51.0/255 alpha:1];
     }
 }
 

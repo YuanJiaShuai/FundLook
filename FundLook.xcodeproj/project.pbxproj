@@ -7,10 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7106CE3B25946ABF002DF745 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B5399C2592D54500D992D6 /* WidgetKit.framework */; };
+		7106CE3C25946ABF002DF745 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B5399E2592D54500D992D6 /* SwiftUI.framework */; };
+		7106CE3F25946ABF002DF745 /* FundLookNewWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7106CE3E25946ABF002DF745 /* FundLookNewWidget.swift */; };
+		7106CE4225946AC0002DF745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7106CE4125946AC0002DF745 /* Assets.xcassets */; };
+		7106CE4525946AC0002DF745 /* FundLookNewWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 7106CE4025946ABF002DF745 /* FundLookNewWidget.intentdefinition */; };
+		7106CE4625946AC0002DF745 /* FundLookNewWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 7106CE4025946ABF002DF745 /* FundLookNewWidget.intentdefinition */; };
+		7106CE4925946AC0002DF745 /* FundLookNewWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7106CE3A25946ABF002DF745 /* FundLookNewWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		710A271F258B297C004F3ADF /* DIN-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 710A271A258B297C004F3ADF /* DIN-Regular.otf */; };
 		710A272D258B3143004F3ADF /* FLTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 710A272C258B3143004F3ADF /* FLTableView.m */; };
-		710A2733258B39AA004F3ADF /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 710A2732258B39AA004F3ADF /* Tools.m */; };
 		710A2742258B58B1004F3ADF /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 710A2741258B58B1004F3ADF /* SearchViewController.m */; };
+		7124A33A259359F8007249A1 /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D6C0D9258C7226008C3C96 /* FMDBManager.m */; };
+		71659C7A2593499B00DB2AD5 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71659C622593496900DB2AD5 /* NotificationCenter.framework */; };
+		71659C7E2593499B00DB2AD5 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71659C7D2593499B00DB2AD5 /* TodayViewController.m */; };
+		71659C812593499C00DB2AD5 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71659C7F2593499B00DB2AD5 /* TodayViewController.xib */; };
+		71659C852593499C00DB2AD5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71659C832593499C00DB2AD5 /* InfoPlist.strings */; };
+		71659C892593499C00DB2AD5 /* FundLookWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 71659C792593499B00DB2AD5 /* FundLookWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		716848D925943A8D00B4BADD /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 710A2732258B39AA004F3ADF /* Tools.m */; };
 		71771CC9258AF6190083B6D9 /* IndexStockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71771CC8258AF6190083B6D9 /* IndexStockView.m */; };
 		71776DE0258A148E00437005 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71776DDF258A148E00437005 /* AppDelegate.m */; };
 		71776DE3258A148E00437005 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71776DE2258A148E00437005 /* ViewController.m */; };
@@ -23,11 +36,29 @@
 		7181C52F2590353400F03B47 /* FundDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7181C52D2590353400F03B47 /* FundDetailViewController.xib */; };
 		7181C5532590416700F03B47 /* ManagerFundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7181C5512590416700F03B47 /* ManagerFundViewController.m */; };
 		7181C5542590416700F03B47 /* ManagerFundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7181C5522590416700F03B47 /* ManagerFundViewController.xib */; };
+		718A2D6825920D2D000BD5CD /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 718A2D6725920D2D000BD5CD /* libz.tbd */; };
+		718A2D6B25920D33000BD5CD /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 718A2D6625920D22000BD5CD /* libiconv.tbd */; };
+		718A2D6F25920D3B000BD5CD /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 718A2D6E25920D3B000BD5CD /* libsqlite3.0.tbd */; };
 		71D6C0DA258C7226008C3C96 /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D6C0D9258C7226008C3C96 /* FMDBManager.m */; };
 		8A6401E834AF51DC29FB683B /* libPods-FundLook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97157B7AB8D4CF4C5467EC16 /* libPods-FundLook.a */; };
+		B316F90A4EACD4596113FF0B /* libPods-FundLookWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB6C105C662A02F2D79301B /* libPods-FundLookWidget.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7106CE4725946AC0002DF745 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71776DD3258A148E00437005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7106CE3925946ABF002DF745;
+			remoteInfo = FundLookNewWidgetExtension;
+		};
+		71659C872593499C00DB2AD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71776DD3258A148E00437005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71659C782593499B00DB2AD5;
+			remoteInfo = FundLookWidget;
+		};
 		71776DF2258A149100437005 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 71776DD3258A148E00437005 /* Project object */;
@@ -45,21 +76,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		71771CE0258B1E850083B6D9 /* Embed Frameworks */ = {
+		71B539AD2592D54600D992D6 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 10;
+			dstSubfolderSpec = 13;
 			files = (
+				7106CE4925946AC0002DF745 /* FundLookNewWidgetExtension.appex in Embed App Extensions */,
+				71659C892593499C00DB2AD5 /* FundLookWidget.appex in Embed App Extensions */,
 			);
-			name = "Embed Frameworks";
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008A2F6123FD56CB74016EB8 /* Pods-FundLook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FundLook.debug.xcconfig"; path = "Target Support Files/Pods-FundLook/Pods-FundLook.debug.xcconfig"; sourceTree = "<group>"; };
+		09702FE9CBEF7C3F68090E20 /* Pods-FundLookWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FundLookWidget.debug.xcconfig"; path = "Target Support Files/Pods-FundLookWidget/Pods-FundLookWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		33611C0CC2DAAB9539F62470 /* Pods-FundLook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FundLook.release.xcconfig"; path = "Target Support Files/Pods-FundLook/Pods-FundLook.release.xcconfig"; sourceTree = "<group>"; };
+		6B75882624D717509BE9EED0 /* Pods-FundLookWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FundLookWidget.release.xcconfig"; path = "Target Support Files/Pods-FundLookWidget/Pods-FundLookWidget.release.xcconfig"; sourceTree = "<group>"; };
+		7106CE3A25946ABF002DF745 /* FundLookNewWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FundLookNewWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7106CE3E25946ABF002DF745 /* FundLookNewWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundLookNewWidget.swift; sourceTree = "<group>"; };
+		7106CE4025946ABF002DF745 /* FundLookNewWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = FundLookNewWidget.intentdefinition; sourceTree = "<group>"; };
+		7106CE4125946AC0002DF745 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7106CE4325946AC0002DF745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7106CE4425946AC0002DF745 /* FundLookNewWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FundLookNewWidget.entitlements; sourceTree = "<group>"; };
 		710A271A258B297C004F3ADF /* DIN-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN-Regular.otf"; sourceTree = "<group>"; };
 		710A2724258B2A8C004F3ADF /* MacroHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroHeader.h; sourceTree = "<group>"; };
 		710A272B258B3143004F3ADF /* FLTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLTableView.h; sourceTree = "<group>"; };
@@ -68,6 +109,14 @@
 		710A2732258B39AA004F3ADF /* Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		710A2740258B58B1004F3ADF /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		710A2741258B58B1004F3ADF /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		71659C622593496900DB2AD5 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		71659C792593499B00DB2AD5 /* FundLookWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FundLookWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		71659C7C2593499B00DB2AD5 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		71659C7D2593499B00DB2AD5 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		71659C802593499B00DB2AD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		71659C822593499C00DB2AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71659C842593499C00DB2AD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		71659C862593499C00DB2AD5 /* FundLookWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FundLookWidget.entitlements; sourceTree = "<group>"; };
 		71771CC7258AF6190083B6D9 /* IndexStockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexStockView.h; sourceTree = "<group>"; };
 		71771CC8258AF6190083B6D9 /* IndexStockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndexStockView.m; sourceTree = "<group>"; };
 		71771CD0258AF9530083B6D9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -93,16 +142,43 @@
 		7181C5502590416700F03B47 /* ManagerFundViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagerFundViewController.h; sourceTree = "<group>"; };
 		7181C5512590416700F03B47 /* ManagerFundViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagerFundViewController.m; sourceTree = "<group>"; };
 		7181C5522590416700F03B47 /* ManagerFundViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManagerFundViewController.xib; sourceTree = "<group>"; };
+		718A2D6625920D22000BD5CD /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		718A2D6725920D2D000BD5CD /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		718A2D6E25920D3B000BD5CD /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		71B5399C2592D54500D992D6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		71B5399E2592D54500D992D6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		71D6C0D8258C7226008C3C96 /* FMDBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDBManager.h; sourceTree = "<group>"; };
 		71D6C0D9258C7226008C3C96 /* FMDBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBManager.m; sourceTree = "<group>"; };
 		97157B7AB8D4CF4C5467EC16 /* libPods-FundLook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FundLook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBB6C105C662A02F2D79301B /* libPods-FundLookWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FundLookWidget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7106CE3725946ABF002DF745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7106CE3C25946ABF002DF745 /* SwiftUI.framework in Frameworks */,
+				7106CE3B25946ABF002DF745 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71659C762593499B00DB2AD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71659C7A2593499B00DB2AD5 /* NotificationCenter.framework in Frameworks */,
+				B316F90A4EACD4596113FF0B /* libPods-FundLookWidget.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		71776DD8258A148E00437005 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				718A2D6F25920D3B000BD5CD /* libsqlite3.0.tbd in Frameworks */,
+				718A2D6B25920D33000BD5CD /* libiconv.tbd in Frameworks */,
+				718A2D6825920D2D000BD5CD /* libz.tbd in Frameworks */,
 				8A6401E834AF51DC29FB683B /* libPods-FundLook.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,6 +200,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7106CE3D25946ABF002DF745 /* FundLookNewWidget */ = {
+			isa = PBXGroup;
+			children = (
+				7106CE3E25946ABF002DF745 /* FundLookNewWidget.swift */,
+				7106CE4025946ABF002DF745 /* FundLookNewWidget.intentdefinition */,
+				7106CE4125946AC0002DF745 /* Assets.xcassets */,
+				7106CE4325946AC0002DF745 /* Info.plist */,
+				7106CE4425946AC0002DF745 /* FundLookNewWidget.entitlements */,
+			);
+			path = FundLookNewWidget;
+			sourceTree = "<group>";
+		};
 		710A2716258B295C004F3ADF /* FontFile */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +239,19 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		71659C7B2593499B00DB2AD5 /* FundLookWidget */ = {
+			isa = PBXGroup;
+			children = (
+				71659C7C2593499B00DB2AD5 /* TodayViewController.h */,
+				71659C7D2593499B00DB2AD5 /* TodayViewController.m */,
+				71659C7F2593499B00DB2AD5 /* TodayViewController.xib */,
+				71659C822593499C00DB2AD5 /* Info.plist */,
+				71659C832593499C00DB2AD5 /* InfoPlist.strings */,
+				71659C862593499C00DB2AD5 /* FundLookWidget.entitlements */,
+			);
+			path = FundLookWidget;
+			sourceTree = "<group>";
+		};
 		71771CC6258AF5DE0083B6D9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +276,8 @@
 				71776DDD258A148E00437005 /* FundLook */,
 				71776DF4258A149100437005 /* FundLookTests */,
 				71776DFF258A149100437005 /* FundLookUITests */,
+				71659C7B2593499B00DB2AD5 /* FundLookWidget */,
+				7106CE3D25946ABF002DF745 /* FundLookNewWidget */,
 				71776DDC258A148E00437005 /* Products */,
 				D10A61AEEEC280ED731D4D34 /* Pods */,
 				AE957B93A00D84908FC78D7E /* Frameworks */,
@@ -187,6 +290,8 @@
 				71776DDB258A148E00437005 /* FundLook.app */,
 				71776DF1258A149100437005 /* FundLookTests.xctest */,
 				71776DFC258A149100437005 /* FundLookUITests.xctest */,
+				71659C792593499B00DB2AD5 /* FundLookWidget.appex */,
+				7106CE3A25946ABF002DF745 /* FundLookNewWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -250,7 +355,14 @@
 		AE957B93A00D84908FC78D7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				718A2D6E25920D3B000BD5CD /* libsqlite3.0.tbd */,
+				718A2D6725920D2D000BD5CD /* libz.tbd */,
+				718A2D6625920D22000BD5CD /* libiconv.tbd */,
 				97157B7AB8D4CF4C5467EC16 /* libPods-FundLook.a */,
+				71B5399C2592D54500D992D6 /* WidgetKit.framework */,
+				71B5399E2592D54500D992D6 /* SwiftUI.framework */,
+				71659C622593496900DB2AD5 /* NotificationCenter.framework */,
+				DBB6C105C662A02F2D79301B /* libPods-FundLookWidget.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -260,6 +372,8 @@
 			children = (
 				008A2F6123FD56CB74016EB8 /* Pods-FundLook.debug.xcconfig */,
 				33611C0CC2DAAB9539F62470 /* Pods-FundLook.release.xcconfig */,
+				09702FE9CBEF7C3F68090E20 /* Pods-FundLookWidget.debug.xcconfig */,
+				6B75882624D717509BE9EED0 /* Pods-FundLookWidget.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -267,6 +381,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7106CE3925946ABF002DF745 /* FundLookNewWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7106CE4C25946AC0002DF745 /* Build configuration list for PBXNativeTarget "FundLookNewWidgetExtension" */;
+			buildPhases = (
+				7106CE3625946ABF002DF745 /* Sources */,
+				7106CE3725946ABF002DF745 /* Frameworks */,
+				7106CE3825946ABF002DF745 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FundLookNewWidgetExtension;
+			productName = FundLookNewWidgetExtension;
+			productReference = 7106CE3A25946ABF002DF745 /* FundLookNewWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		71659C782593499B00DB2AD5 /* FundLookWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71659C8A2593499C00DB2AD5 /* Build configuration list for PBXNativeTarget "FundLookWidget" */;
+			buildPhases = (
+				6DD3C6504C254CA55E762391 /* [CP] Check Pods Manifest.lock */,
+				71659C752593499B00DB2AD5 /* Sources */,
+				71659C762593499B00DB2AD5 /* Frameworks */,
+				71659C772593499B00DB2AD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FundLookWidget;
+			productName = FundLookWidget;
+			productReference = 71659C792593499B00DB2AD5 /* FundLookWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		71776DDA258A148E00437005 /* FundLook */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71776E05258A149100437005 /* Build configuration list for PBXNativeTarget "FundLook" */;
@@ -275,11 +424,13 @@
 				71776DD7258A148E00437005 /* Sources */,
 				71776DD8258A148E00437005 /* Frameworks */,
 				71776DD9258A148E00437005 /* Resources */,
-				71771CE0258B1E850083B6D9 /* Embed Frameworks */,
+				71B539AD2592D54600D992D6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				71659C882593499C00DB2AD5 /* PBXTargetDependency */,
+				7106CE4825946AC0002DF745 /* PBXTargetDependency */,
 			);
 			name = FundLook;
 			productName = FundLook;
@@ -328,8 +479,15 @@
 		71776DD3258A148E00437005 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+					7106CE3925946ABF002DF745 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					71659C782593499B00DB2AD5 = {
+						CreatedOnToolsVersion = 10.3;
+					};
 					71776DDA258A148E00437005 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -359,11 +517,30 @@
 				71776DDA258A148E00437005 /* FundLook */,
 				71776DF0258A149100437005 /* FundLookTests */,
 				71776DFB258A149100437005 /* FundLookUITests */,
+				71659C782593499B00DB2AD5 /* FundLookWidget */,
+				7106CE3925946ABF002DF745 /* FundLookNewWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7106CE3825946ABF002DF745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7106CE4225946AC0002DF745 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71659C772593499B00DB2AD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71659C812593499C00DB2AD5 /* TodayViewController.xib in Resources */,
+				71659C852593499C00DB2AD5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		71776DD9258A148E00437005 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -393,6 +570,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6DD3C6504C254CA55E762391 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FundLookWidget-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8B66EE8D7ACB9E1B085DB66E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -418,15 +617,34 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7106CE3625946ABF002DF745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7106CE3F25946ABF002DF745 /* FundLookNewWidget.swift in Sources */,
+				7106CE4525946AC0002DF745 /* FundLookNewWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71659C752593499B00DB2AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7124A33A259359F8007249A1 /* FMDBManager.m in Sources */,
+				71659C7E2593499B00DB2AD5 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		71776DD7258A148E00437005 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				71776DE3258A148E00437005 /* ViewController.m in Sources */,
+				716848D925943A8D00B4BADD /* Tools.m in Sources */,
 				7181C52E2590353400F03B47 /* FundDetailViewController.m in Sources */,
 				71776DEB258A149100437005 /* main.m in Sources */,
+				7106CE4625946AC0002DF745 /* FundLookNewWidget.intentdefinition in Sources */,
 				710A272D258B3143004F3ADF /* FLTableView.m in Sources */,
-				710A2733258B39AA004F3ADF /* Tools.m in Sources */,
 				71D6C0DA258C7226008C3C96 /* FMDBManager.m in Sources */,
 				71771CC9258AF6190083B6D9 /* IndexStockView.m in Sources */,
 				7181C5532590416700F03B47 /* ManagerFundViewController.m in Sources */,
@@ -454,6 +672,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7106CE4825946AC0002DF745 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7106CE3925946ABF002DF745 /* FundLookNewWidgetExtension */;
+			targetProxy = 7106CE4725946AC0002DF745 /* PBXContainerItemProxy */;
+		};
+		71659C882593499C00DB2AD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71659C782593499B00DB2AD5 /* FundLookWidget */;
+			targetProxy = 71659C872593499C00DB2AD5 /* PBXContainerItemProxy */;
+		};
 		71776DF3258A149100437005 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 71776DDA258A148E00437005 /* FundLook */;
@@ -467,6 +695,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		71659C7F2593499B00DB2AD5 /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71659C802593499B00DB2AD5 /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		71659C832593499C00DB2AD5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71659C842593499C00DB2AD5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		71776DE6258A149100437005 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -478,6 +722,102 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7106CE4A25946AC0002DF745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = FundLookNewWidget/FundLookNewWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LBPG6T5755;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = FundLookNewWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourui.YRProject.FundLook.FundLookNewWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7106CE4B25946AC0002DF745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = FundLookNewWidget/FundLookNewWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LBPG6T5755;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = FundLookNewWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourui.YRProject.FundLook.FundLookNewWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		71659C8B2593499C00DB2AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09702FE9CBEF7C3F68090E20 /* Pods-FundLookWidget.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FundLookWidget/FundLookWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LBPG6T5755;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = FundLookWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourui.YRProject.FundLook.FundLookWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		71659C8C2593499C00DB2AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B75882624D717509BE9EED0 /* Pods-FundLookWidget.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FundLookWidget/FundLookWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LBPG6T5755;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = FundLookWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourui.YRProject.FundLook.FundLookWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		71776E03258A149100437005 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -593,10 +933,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 008A2F6123FD56CB74016EB8 /* Pods-FundLook.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FundLook/FundLook.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = LBPG6T5755;
@@ -604,6 +945,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FundLook/ThridParty/YRMarketFramework",
+					"$(PROJECT_DIR)/FundLook/ThridParty",
+					"$(PROJECT_DIR)/FundLook/ThridParty/YRH5Framework",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FundLook/PrefixHeader.pch";
 				INFOPLIST_FILE = FundLook/Info.plist;
@@ -615,8 +958,25 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/FundLook/ThridParty/HengShengSDK",
 					"$(PROJECT_DIR)/FundLook/ThridParty/libQuoteWidget",
+					"$(PROJECT_DIR)/FundLook/ThridParty/ThridParty/Reachability",
+					"$(PROJECT_DIR)/FundLook/ThridParty/ThridParty/SSZipArchive",
+					"$(PROJECT_DIR)/FundLook/ThridParty/YRH5Framework/ThridParty/Reachability",
+					"$(PROJECT_DIR)/FundLook/ThridParty/YRH5Framework/ThridParty/SSZipArchive",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"FMDB\"",
+					"-l\"Masonry\"",
+					"-l\"sqlite3\"",
+					"-framework",
+					"\"AppKit\"",
+					"-framework",
+					"\"Foundation\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourui.YRProject.FundLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -626,10 +986,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33611C0CC2DAAB9539F62470 /* Pods-FundLook.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FundLook/FundLook.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = LBPG6T5755;
@@ -637,6 +998,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FundLook/ThridParty/YRMarketFramework",
+					"$(PROJECT_DIR)/FundLook/ThridParty",
+					"$(PROJECT_DIR)/FundLook/ThridParty/YRH5Framework",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FundLook/PrefixHeader.pch";
 				INFOPLIST_FILE = FundLook/Info.plist;
@@ -648,8 +1011,25 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/FundLook/ThridParty/HengShengSDK",
 					"$(PROJECT_DIR)/FundLook/ThridParty/libQuoteWidget",
+					"$(PROJECT_DIR)/FundLook/ThridParty/ThridParty/Reachability",
+					"$(PROJECT_DIR)/FundLook/ThridParty/ThridParty/SSZipArchive",
+					"$(PROJECT_DIR)/FundLook/ThridParty/YRH5Framework/ThridParty/Reachability",
+					"$(PROJECT_DIR)/FundLook/ThridParty/YRH5Framework/ThridParty/SSZipArchive",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"FMDB\"",
+					"-l\"Masonry\"",
+					"-l\"sqlite3\"",
+					"-framework",
+					"\"AppKit\"",
+					"-framework",
+					"\"Foundation\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourui.YRProject.FundLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -734,6 +1114,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7106CE4C25946AC0002DF745 /* Build configuration list for PBXNativeTarget "FundLookNewWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7106CE4A25946AC0002DF745 /* Debug */,
+				7106CE4B25946AC0002DF745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71659C8A2593499C00DB2AD5 /* Build configuration list for PBXNativeTarget "FundLookWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71659C8B2593499C00DB2AD5 /* Debug */,
+				71659C8C2593499C00DB2AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		71776DD6258A148E00437005 /* Build configuration list for PBXProject "FundLook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

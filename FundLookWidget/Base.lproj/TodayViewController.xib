@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TodayViewController">
+            <connections>
+                <outlet property="todayProfitLab" destination="a93-ZE-lza" id="AYt-Cs-zCB"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="yesterdayProfitLab" destination="lDh-rs-fUP" id="OLm-hL-QcM"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView simulatedAppContext="notificationCenter" translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="1hS-W6-gdK">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yxR-V0-GQP">
+                            <rect key="frame" x="14" y="16" width="94" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="今日估算收益：" id="qig-Nm-upE">
+                                <font key="font" usesAppearanceFont="YES"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JdO-Ud-mpu">
+                            <rect key="frame" x="14" y="48" width="68" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="昨日收益：" id="GSs-ju-t9v">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ep2-Gl-19y">
+                            <rect key="frame" x="223" y="23" width="88" height="32"/>
+                            <buttonCell key="cell" type="push" title="更新净值" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="CjT-wc-uvn">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="updateButtonClickEvent:" target="-2" id="nZE-50-vq9"/>
+                            </connections>
+                        </button>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="a93-ZE-lza">
+                            <rect key="frame" x="104" y="14" width="35" height="21"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="0.00" id="Plz-et-oOj">
+                                <font key="font" size="18" name="DINAlternate-Bold"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lDh-rs-fUP">
+                            <rect key="frame" x="78" y="46" width="35" height="21"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="0.00" id="8uj-WK-JfA">
+                                <font key="font" size="18" name="DINAlternate-Bold"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ep2-Gl-19y" secondAttribute="trailing" constant="16" id="0Ie-IV-Tqa"/>
+                        <constraint firstItem="lDh-rs-fUP" firstAttribute="leading" secondItem="JdO-Ud-mpu" secondAttribute="trailing" id="4O4-zU-2v6"/>
+                        <constraint firstItem="JdO-Ud-mpu" firstAttribute="leading" secondItem="1hS-W6-gdK" secondAttribute="leading" constant="16" id="MsX-7d-Qmb"/>
+                        <constraint firstAttribute="height" constant="80" id="NHg-sh-Qm2"/>
+                        <constraint firstItem="yxR-V0-GQP" firstAttribute="leading" secondItem="1hS-W6-gdK" secondAttribute="leading" constant="16" id="P7D-IM-xpP"/>
+                        <constraint firstItem="JdO-Ud-mpu" firstAttribute="top" secondItem="1hS-W6-gdK" secondAttribute="top" constant="16" id="Vpp-2H-g7C"/>
+                        <constraint firstItem="a93-ZE-lza" firstAttribute="centerY" secondItem="yxR-V0-GQP" secondAttribute="centerY" id="aVb-d8-evo"/>
+                        <constraint firstItem="a93-ZE-lza" firstAttribute="leading" secondItem="yxR-V0-GQP" secondAttribute="trailing" id="cBW-F4-uOa"/>
+                        <constraint firstItem="lDh-rs-fUP" firstAttribute="centerY" secondItem="JdO-Ud-mpu" secondAttribute="centerY" id="e4C-dy-EkZ"/>
+                        <constraint firstItem="ep2-Gl-19y" firstAttribute="centerY" secondItem="1hS-W6-gdK" secondAttribute="centerY" id="eks-Du-t7h"/>
+                        <constraint firstAttribute="bottom" secondItem="yxR-V0-GQP" secondAttribute="bottom" constant="16" id="igf-wA-2Xw"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1hS-W6-gdK" secondAttribute="trailing" id="fCZ-yh-p42"/>
+                <constraint firstItem="1hS-W6-gdK" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="iMu-bz-Ofe"/>
+                <constraint firstAttribute="bottom" secondItem="1hS-W6-gdK" secondAttribute="bottom" id="kVA-nw-j6M"/>
+                <constraint firstItem="1hS-W6-gdK" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="zFf-cE-fUT"/>
+            </constraints>
+            <point key="canvasLocation" x="-330" y="53"/>
+        </customView>
+    </objects>
+</document>

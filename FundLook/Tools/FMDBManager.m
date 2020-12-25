@@ -35,11 +35,23 @@
 }
 
 - (void)initDataBase{
+    //老地址
     NSString *docuPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
     NSString *dbPath = [docuPath stringByAppendingPathComponent:@"Fund.db"];
     NSLog(@"!!!dbPath = %@",dbPath);
     
-    self.queueDb = [FMDatabaseQueue databaseQueueWithPath:dbPath];
+    //新地址
+    NSError *error = nil;
+    NSURL *groupURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.com.fundlook"];
+    NSURL *fileURL = [groupURL URLByAppendingPathComponent:@"Fund.db"];
+    NSLog(@"!!!fileURL.path = %@",fileURL.path);
+    
+    //复制文件
+    BOOL copyResult = [[NSFileManager defaultManager] copyItemAtPath:dbPath toPath:fileURL.path error:&error];
+    NSLog(@"copyResult = %d", copyResult);
+    
+    
+    self.queueDb = [FMDatabaseQueue databaseQueueWithURL:fileURL];
     
     [self.queueDb inDatabase:^(FMDatabase * _Nonnull db) {
         NSString *existsSql = [NSString stringWithFormat:@"select count(name) as countNum from sqlite_master where type = 'table' and name = '%@'", FUND_TABLE_NAME];
@@ -51,7 +63,7 @@
                 NSLog(@"存在");
                 return;
             }else{
-                NSString *sql = [NSString stringWithFormat:@"CREATE TABLE %@(fundCode varchar(255), fFe varchar(255))", FUND_TABLE_NAME];
+                NSString *sql = [NSString stringWithFormat:@"create table %@(fundCode varchar(255), fFe varchar(255))", FUND_TABLE_NAME];
                 BOOL result = [db executeUpdate:sql];
                 if(result){
                     
@@ -69,7 +81,7 @@
 - (void)loadAllFundData:(void (^)(NSMutableArray * _Nonnull))data{
     NSMutableArray *dataArray = [[NSMutableArray alloc] init];
     [self.queueDb inDatabase:^(FMDatabase * _Nonnull db) {
-        FMResultSet *res = [db executeQuery:[NSString stringWithFormat:@"SELECT * FROM %@", FUND_TABLE_NAME]];
+        FMResultSet *res = [db executeQuery:[NSString stringWithFormat:@"select * from %@", FUND_TABLE_NAME]];
         NSArray *keys = [self allPropertyNames];
         while ([res next]) {
             FundModel *model = [[FundModel alloc]init];

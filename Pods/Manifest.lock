@@ -16,23 +16,27 @@ PODS:
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
   - Masonry (1.1.0)
+  - SSZipArchive (2.2.3)
 
 DEPENDENCIES:
   - AFNetworking
   - FMDB
   - Masonry
+  - SSZipArchive
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - FMDB
     - Masonry
+    - SSZipArchive
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
 
-PODFILE CHECKSUM: 1cdd1cb49ec41d97232c2c8074cd848225f5c428
+PODFILE CHECKSUM: c6aab5a9d89f12a7e39ec2e4e37018acbcb0368a
 
 COCOAPODS: 1.10.0

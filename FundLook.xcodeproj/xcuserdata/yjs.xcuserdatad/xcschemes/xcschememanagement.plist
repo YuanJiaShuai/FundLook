@@ -6,8 +6,57 @@
 	<dict>
 		<key>FundLook.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>2</integer>
+		</dict>
+		<key>FundLookNewWidgetExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
+		<key>FundLookTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>FundLookUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>FundLookWidget.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>71659C602593496900DB2AD5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71776DDA258A148E00437005</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71776DF0258A149100437005</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71776DFB258A149100437005</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

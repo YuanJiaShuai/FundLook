@@ -26,9 +26,9 @@
             filePath = "FundLook/Controller/ViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "212"
-            endingLineNumber = "212"
-            landmarkName = "-deleteOptionFundEvent:"
+            startingLineNumber = "238"
+            endingLineNumber = "238"
+            landmarkName = "-rightMouseUp:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,9 +42,25 @@
             filePath = "FundLook/Controller/ViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "207"
-            endingLineNumber = "207"
-            landmarkName = "-rightMouseUp:"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
+            landmarkName = "-updateFundClickEvent:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "78D60E40-C4F8-4214-9C97-25DC7E675417"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FundLook/ThridParty/YRH5Framework/Utils/TXUtils/HLUtils.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
+            landmarkName = "+downloadUniversalStockFileWithNowTimeInterval:downLoadComplete:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

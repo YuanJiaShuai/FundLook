@@ -23,7 +23,7 @@
 
 @property (strong, nonatomic) NSMutableArray *fundArray;
 @property (weak) IBOutlet NSTextField *todayProfitLab;
-
+@property (weak) IBOutlet NSTextField *yesterdayProfitLab;
 @end
 
 @implementation ViewController
@@ -39,6 +39,23 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadFundDataRequest) name:@"UpdateOptionalFundUINotification" object:nil];
 }
+
+//- (BOOL)saveDataByNSFileManager{
+//    NSError *err = nil;
+//    NSURL *containerURL = [[NSFileManager defaultManager] containerURLForSecuri tyApplicationGroupIdentifier:@"group.com.xxx"];
+//    containerURL = [containerURL URLByAppendingPathComponent:@"Library/Caches/ widget"];
+//    NSString *value = @"asdfasdfasf";
+//    BOOL result = [value writeToURL:containerURL atomically:YES encoding:NSUTF8StringEncoding error:&err];
+//    if (!result) {
+//        NSLog(@"%@",err);
+//
+//    } else {
+//        NSLog(@"save value:%@ success.",value);
+//
+//    }
+//    return result;
+//
+//}
 
 - (void)loadFundDataRequest{
     [[FMDBManager  sharedManager] loadAllFundData:^(NSMutableArray * _Nonnull result) {
@@ -89,12 +106,12 @@
         NSInteger TotalCount = [responseObject[@"TotalCount"] integerValue];
         if(TotalCount != 0){
             NSArray *diff = responseObject[@"Datas"];
-//            for(NSDictionary *diffDic in diff){
-//                FundModel *model = [[FundModel alloc]init];
-//                model.fundCode = diffDic[@"FCODE"];
-//
-//                [[FMDBManager sharedManager] updateFundModel:model];
-//            }
+            //            for(NSDictionary *diffDic in diff){
+            //                FundModel *model = [[FundModel alloc]init];
+            //                model.fundCode = diffDic[@"FCODE"];
+            //
+            //                [[FMDBManager sharedManager] updateFundModel:model];
+            //            }
             self.fundArray = [[NSMutableArray alloc]initWithArray:diff];
             [self.tableView reloadData];
             
@@ -110,26 +127,35 @@
 
 - (void)calculateTodayProfitWithFundArray:(NSArray *)fundArray{
     __block CGFloat todayProfit = 0.0;
+    __block CGFloat yestodyProfit = 0.0;
     
     NSMutableArray *fCodeArr = [[NSMutableArray alloc]init];
     for(NSDictionary *fundModel in fundArray){
         [fCodeArr addObject:fundModel[@"FCODE"]];
     }
-    
+    //146.69
     [[FMDBManager sharedManager] queryFundWithCodes:fCodeArr result:^(NSMutableArray * _Nonnull result) {
         for(FundModel *model in result){
             for(NSDictionary *fundModel in fundArray){
                 if([model.fundCode isEqualToString:fundModel[@"FCODE"]]){
                     CGFloat netProfit = [fundModel[@"GSZ"] doubleValue] - [fundModel[@"NAV"] doubleValue];
                     todayProfit = todayProfit + [model.fFe doubleValue] * netProfit;
+                    
+                    CGFloat yesterdayNetProfit = [fundModel[@"NAV"] doubleValue] - [fundModel[@"NAV"] doubleValue]/(1 + ([fundModel[@"NAVCHGRT"] doubleValue]/100));
+                    yestodyProfit = yestodyProfit + [model.fFe doubleValue] * yesterdayNetProfit;
                 }
             }
         }
         
         dispatch_async(dispatch_get_main_queue(), ^{
             NSString *value = [NSString stringWithFormat:@"%0.2f", todayProfit];
+            NSString *yesterdayValue = [NSString stringWithFormat:@"%0.2f", yestodyProfit];
+            
             self.todayProfitLab.stringValue = value;
             self.todayProfitLab.textColor = [Tools colorOfValue:value];
+            
+            self.yesterdayProfitLab.stringValue = yesterdayValue;
+            self.yesterdayProfitLab.textColor = [Tools colorOfValue:yesterdayValue];
         });
     }];
 }
